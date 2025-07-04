@@ -3,13 +3,13 @@ server:
 
 spring:
   application:
-    name: config-server
+    name: loja
 
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/italo-kelmy/loja-config
-          default-label: main
+          uri: https://github.com/italo-kelmy/ConfiguracaoSpringCloudConfig
+          default-label: master
           clone-on-start: true
 
