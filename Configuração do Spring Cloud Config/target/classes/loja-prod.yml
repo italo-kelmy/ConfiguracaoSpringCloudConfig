@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/produtoseletronicos?useSSL=false&serverTimezone=UTC
+    username: italo
+    password: 2610!!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+
+jwt:
+  secretKey: FkGy1ZiESnSrDVuFnZa8NRMA8AngDuEQzkjBrzEuL94
+  expiration: 86400000
+
+server:
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: g9$d.g!Dfh.HuW#
+    key-store-type: PKCS12
+    key-alias: mydomain
+  port: 8443
